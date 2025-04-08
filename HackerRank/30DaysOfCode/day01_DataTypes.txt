@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int i = 4;
+        double d = 4.0;
+        String s = "HackerRank ";
+        Scanner scanner = new Scanner(System.in);
+        int iInput = scanner.nextInt();
+        double dInput = scanner.nextDouble();
+        System.out.println(i + iInput);
+        System.out.println(d + dInput);
+        System.out.print(s);
+        String sInput;
+        while (scanner.hasNext()) {
+        sInput = scanner.nextLine();
+        System.out.print(sInput);
+        }
+        scanner.close();
+    }
+}

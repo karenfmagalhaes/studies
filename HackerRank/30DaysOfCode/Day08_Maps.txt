@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Map <String, Integer> agenda = new HashMap<String, Integer>();
+        
+        //Scanner scanner = new Scanner(System.in);
+        int entries = StdIn.readInt();
+        String[] keys = new String[entries-1];
+        Integer[] values = new Integer[entries-1];
+        
+        for (int i = 0; i <entries-1; i++) {
+            keys[i] =  scanner.nextLine();
+            values[i] = scanner.nextInt();
+           agenda.put(keys[i], values[i]);
+
+        }
+        scanner.close();
+        for (int i = 0; i <entries-1; i++) {
+        System.out.println(agenda.get(keys[i]) + "=" + values[i]);
+        }   
+}
+}
